@@ -9,7 +9,7 @@ header {
 }
 
 .caja{
-    width: 940px;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 }
@@ -38,11 +38,23 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.productos{
+.productos {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.prod {
+    background-image: url('/imagenes/WhatsApp\ Image\ 2024-02-27\ at\ 16.13.14.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0f0101;
+}
+
 
 
 .productos li{
@@ -93,7 +105,7 @@ footer{
 .copyright{
     color:#FFFFFF;
     font-size: 13px;
-    margin:20px;
+    margin:0px;
 }
 
 form{
@@ -114,15 +126,26 @@ form label, form legend{
     color: #fff; /* Cambia el color del texto si es necesario para que se vea bien sobre la imagen */
 }
 
-.input-padron{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+form {
+    margin-left: 20px; /* Ajusta el valor según sea necesario */
+}
+
+.input-padron {
+    width: calc(50% - 20px); /* Ancho del campo (restando el padding) */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 2px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .checkbox{
     margin:20px 0;
+}
+
+.social-container img {
+	max-width: 100%;
+	max-height: 55px;
+	margin-bottom: 15px;
 }
 
 .enviar{
